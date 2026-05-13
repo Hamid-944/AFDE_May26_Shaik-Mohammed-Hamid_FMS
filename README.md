@@ -180,13 +180,6 @@ pip install -r requirements.txt
 
 Create a `.env` file inside the `backend/` folder:
 
-```env
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=feedback_db
-```
 
 > The application **auto-creates** the `feedback_db` database and `feedback` table on first startup — no manual SQL needed.
 
