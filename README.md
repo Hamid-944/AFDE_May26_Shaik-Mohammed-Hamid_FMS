@@ -281,48 +281,34 @@ CREATE TABLE feedback (
 ---
 
 ## 📸 Pages
+Dashboard
+<img width="1889" height="884" alt="image" src="https://github.com/user-attachments/assets/a7e1117b-10c5-4036-a61e-419fd590bfae" />
+<img width="1904" height="765" alt="image" src="https://github.com/user-attachments/assets/c1d6b765-f16d-4886-af26-7b1dfce4877c" />
+<img width="1909" height="664" alt="image" src="https://github.com/user-attachments/assets/65fb739e-e2de-4d5c-93b8-41c438711772" />
+Submit Feedback
+<img width="1104" height="876" alt="image" src="https://github.com/user-attachments/assets/8a5f05cb-a498-451f-9c25-592448a2649c" />
+All Feedbacks
+<img width="1861" height="843" alt="image" src="https://github.com/user-attachments/assets/a0097f20-66d5-4a91-9d36-1d94910538bc" />
+Searching the Feedback
+<img width="1373" height="748" alt="image" src="https://github.com/user-attachments/assets/3311dfac-951d-413b-88f0-8a8a60e46ba0" />
+Swagger UI API Testing
+<img width="1817" height="882" alt="image" src="https://github.com/user-attachments/assets/5863dd56-d4a1-41a7-9795-cce2847ed126" />
+Health check of Backend
+<img width="1842" height="831" alt="image" src="https://github.com/user-attachments/assets/736a71b9-7225-4556-bff6-bd66720183b6" />
+<img width="1823" height="859" alt="image" src="https://github.com/user-attachments/assets/77828426-6d3f-40b0-9a87-2b9f41cfdee3" />
+<img width="1801" height="881" alt="image" src="https://github.com/user-attachments/assets/83044494-0ac3-4985-a64a-955c48f16214" />
+<img width="1819" height="871" alt="image" src="https://github.com/user-attachments/assets/18fb13f3-eba1-449d-abfc-fdbbd39248a3" />
 
-| Page | Route | Description |
-|---|---|---|
-| Dashboard | `/` | Analytics overview with 6 charts |
-| Submit Feedback | `/submit` | Feedback form with star rating + confetti |
-| All Feedback | `/feedback` | Paginated table with search & filter |
-| Feedback Details | `/feedback/:id` | Detail view with inline edit and delete |
-| Search | `/search` | Real-time search and filter |
 
----
 
-## 🔮 Roadmap (Phase 2)
 
-- [ ] JWT-based authentication (Participant & Admin roles)
-- [ ] Sentiment analysis on feedback comments
-- [ ] AI-powered semantic search
-- [ ] GenAI summarization of feedback
-- [ ] Cloud deployment (AWS / GCP / Azure)
-- [ ] Email notifications
-- [ ] Export to CSV / PDF
 
----
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-<div align="center">
 
 Built with ❤️ using **FastAPI** + **React** + **MySQL**
 
