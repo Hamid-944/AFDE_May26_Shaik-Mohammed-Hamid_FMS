@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
 from database import engine, Base
-from routers import feedback
+from routers import feedback, etl
 
 
 @asynccontextmanager
@@ -28,6 +28,7 @@ app.add_middleware(
 )
 
 app.include_router(feedback.router)
+app.include_router(etl.router)
 
 
 @app.get("/", tags=["Health"])

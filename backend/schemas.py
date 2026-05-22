@@ -63,3 +63,30 @@ class TopProgramItem(BaseModel):
 class AnalyticsResponse(BaseModel):
     feedback_by_date: list[DateCountItem]
     top_programs: list[TopProgramItem]
+
+
+class EtlRunResponse(BaseModel):
+    run_id: int
+    filename: str
+    status: str
+    total_records: int
+    valid_records: int
+    loaded_records: int
+    duplicate_records: int
+    invalid_records: int
+    cleaned_records: int
+    error_message: Optional[str]
+    started_at: Optional[datetime]
+    completed_at: Optional[datetime]
+
+    model_config = {"from_attributes": True}
+
+
+class EtlReportResponse(BaseModel):
+    total_runs: int
+    total_records_processed: int
+    total_loaded: int
+    total_duplicates: int
+    total_invalid: int
+    avg_valid_rate: float
+    runs: list[EtlRunResponse]
