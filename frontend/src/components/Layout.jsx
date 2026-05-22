@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useLocation, Link } from 'react-router-dom'
-import { LayoutDashboard, MessageSquarePlus, List, Search, Moon, Sun, Menu, X, Plus } from 'lucide-react'
+import { LayoutDashboard, MessageSquarePlus, List, Search, Moon, Sun, Menu, X, Plus, Layers } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import { useTheme } from '../context/ThemeContext'
 import { cn } from '../lib/utils'
@@ -10,6 +10,7 @@ const NAV_ITEMS = [
   { to: '/submit', label: 'Submit', icon: MessageSquarePlus },
   { to: '/feedback', label: 'All Feedback', icon: List },
   { to: '/search', label: 'Search', icon: Search },
+  { to: '/etl', label: 'ETL Pipeline', icon: Layers },
 ]
 
 function NavItem({ to, label, icon: Icon, end, onClick }) {

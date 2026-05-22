@@ -8,6 +8,7 @@ import { SubmitFeedback } from './pages/SubmitFeedback'
 import { FeedbackList } from './pages/FeedbackList'
 import { FeedbackDetails } from './pages/FeedbackDetails'
 import { Search } from './pages/Search'
+import { EtlPipeline } from './pages/EtlPipeline'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -31,6 +32,7 @@ export default function App() {
               <Route path="/feedback" element={<FeedbackList />} />
               <Route path="/feedback/:id" element={<FeedbackDetails />} />
               <Route path="/search" element={<Search />} />
+              <Route path="/etl" element={<EtlPipeline />} />
             </Route>
           </Routes>
         </BrowserRouter>

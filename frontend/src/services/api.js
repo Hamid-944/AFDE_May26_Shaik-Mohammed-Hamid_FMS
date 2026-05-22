@@ -42,3 +42,25 @@ export const feedbackApi = {
   getAnalytics: () =>
     client.get('/feedback/analytics').then((r) => r.data),
 }
+
+export const etlApi = {
+  upload: (file) => {
+    const form = new FormData()
+    form.append('file', file)
+    return client.post('/etl/upload', form, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    }).then((r) => r.data)
+  },
+
+  run: (filePath) =>
+    client.post('/etl/run', null, { params: { file_path: filePath } }).then((r) => r.data),
+
+  getRuns: (params = {}) =>
+    client.get('/etl/runs', { params }).then((r) => r.data),
+
+  getReport: () =>
+    client.get('/etl/report').then((r) => r.data),
+
+  downloadReport: () =>
+    client.get('/etl/report/download', { responseType: 'blob' }).then((r) => r.data),
+}
