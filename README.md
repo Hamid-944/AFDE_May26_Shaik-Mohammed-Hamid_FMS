@@ -452,14 +452,17 @@ CREATE TABLE etl_runs (
 
 ### ETL Pipeline — File Upload & Run
 <!-- Add screenshot of the ETL Pipeline page showing the drag & drop zone -->
+![alt text](image.png)
 <!-- Add screenshot showing the 4-step indicator in the "running" state -->
+![alt text](image-1.png)
 
+![alt text](image-2.png)
 ### ETL Pipeline — Run History
 <!-- Add screenshot of the run history table with a successful run expanded -->
-
+![alt text](image-3.png)
 ### ETL Pipeline — Aggregate Stats Cards
 <!-- Add screenshot showing the 6 stat cards (Total Runs, Records Processed, Loaded, Duplicates, Invalid, Avg Valid Rate) -->
-
+![alt text](image-4.png)
 ### Swagger UI — API Testing
 <img width="1817" height="882" alt="image" src="https://github.com/user-attachments/assets/5863dd56-d4a1-41a7-9795-cce2847ed126" />
 
